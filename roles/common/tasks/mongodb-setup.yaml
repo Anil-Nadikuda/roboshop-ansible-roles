@@ -9,7 +9,7 @@
     state: present
 
 - name: "get the {{component}} entries count"
-  ansible.builtin.shell:  mongo --host mongodb.davaws14.online --quiet --eval 'db = db.getSiblingDB("catalogue"); db.products.count()'
+  ansible.builtin.shell:  mongo --host mongodb.devaws14.online --quiet --eval 'db = db.getSiblingDB("catalogue"); db.products.count()'
   register: entries_count
   when: component == "catalogue"
 
