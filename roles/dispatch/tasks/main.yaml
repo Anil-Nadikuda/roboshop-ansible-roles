@@ -3,17 +3,12 @@
     name: common
     tasks_from: app-setup
 
-- name: install nodejs
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: nodejs
-
 - name: go
   ansible.builtin.import_role:
     name: common
     tasks_from: go
 
-- name: systemd
+- name: system start
   ansible.builtin.import_role:
     name: common
     tasks_from: systemd
