@@ -4,11 +4,10 @@
     state: present
 
 - name: build go application
-  ansible.builtin.common: "{{item}}"
+  ansible.builtin.command: "{{item}}"
   loop:
   - go mod init dispatch
   - go get
   - go build
   args:
     chdir: /app
-    
