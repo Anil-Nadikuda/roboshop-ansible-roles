@@ -1,2 +1,3 @@
 MONGODB_HOST: mongodb.devaws14.online
-REDIS_HOSTS: redis.devaws14.online
+REDIS_HOST: redis.devaws14.online
+CATALOGUE_HOST: catalogue.devaws14.online
