@@ -1,1 +1,2 @@
 MONGODB_HOST: mongodb.devaws14.online
+REDIS_HOSTS: redis.devaws14.online
