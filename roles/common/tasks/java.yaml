@@ -12,8 +12,3 @@
   ansible.builtin.command: "mv target/{{component}}-{{shipping_version}}.jar {{component}}.jar"
   args:
     chdir: /app
-
-- name: copy shipping service
-  ansible.builtin.copy:
-    src: shipping.service.j2
-    dest: /etc/systemd/system/shipping.service
